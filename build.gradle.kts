@@ -54,10 +54,10 @@ kotlin {
         val jvmTest by getting
 
         val jsMain by getting {
-            // XXX Why do I need this?
-            dependencies {
-                implementation(kotlin("stdlib-js"))
-            }
+            // XXX Uncomment to fix the JS compilation, see https://youtrack.jetbrains.com/issue/KT-53471
+//            dependencies {
+//                implementation(kotlin("stdlib-js"))
+//            }
         }
 
         val jsTest by getting
